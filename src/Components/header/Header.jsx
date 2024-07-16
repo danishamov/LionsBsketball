@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
     return (
         <section id="top">
@@ -8,12 +10,12 @@ export default function Header() {
                             <div className="col-md-6">
                                 <div className="full">
                                     <div className="logo">
-                                        <a href="index.html">
+                                        <Link to="/">
                                             <img
                                                 src="images/logo.png"
-                                                alt="#"
+                                                alt="/"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -26,19 +28,10 @@ export default function Header() {
                                                 <i className="fa fa-facebook" />
                                             </a>
                                         </li>
-                                        <li>
-                                            <a className="twitter" href="#">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                        </li>
+
                                         <li>
                                             <a className="youtube" href="#">
                                                 <i className="fa fa-youtube-play" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="pinterest" href="#">
-                                                <i className="fa fa-pinterest-p" />
                                             </a>
                                         </li>
                                     </ul>
@@ -46,17 +39,16 @@ export default function Header() {
                                     {/* button section */}
                                     <ul className="login">
                                         <li className="login-modal">
-                                            <a href="#" className="login">
-                                                <i className="fa fa-user" />
+                                            <Link to="/login" className="login">
                                                 Login
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
                                             <div className="cart-option">
-                                                <a href="#">
+                                                <Link to="/register">
                                                     <i className="fa fa-shopping-cart" />
                                                     Register
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
                                     </ul>
@@ -96,9 +88,9 @@ export default function Header() {
                                                 <div className="collapse navbar-collapse js-navbar-collapse">
                                                     <ul className="nav navbar-nav">
                                                         <li className="active">
-                                                            <a href="index.html">
+                                                            <Link to="/">
                                                                 Home
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
                                                             <a href="about.html">
@@ -280,9 +272,9 @@ export default function Header() {
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="contact.html">
+                                                            <Link to="/contact">
                                                                 contact
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
